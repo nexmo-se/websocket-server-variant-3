@@ -1,10 +1,10 @@
-# WebSocket server (aka Middleware server)
+# WebSocket server (aka Middleware server) - Variant 3
 
 You may use this sample code as a middleware server to handle WebSockets connections and receive audio over those WebSokets.
 
-Of course, in real reployment, your middleware application is an intermediary platform to connect to ASR engines, TTS engines, Voice bots, Voice AI, and more, and may also send back audio to the Vonage platform.
+Of course, in real reployment, your middleware application is an intermediary platform to connect to ASR engines, TTS engines, Voice bots, Voice AI, Noise cancellation engines, Voice FX engines, and more, and may also send back audio to the Vonage platform.
 
-In this sample code, we use Deepgram as an ASR engine.
+In this sample code, if desired, you may use Deepgram as an ASR engine.
 
 ## About this sample server code
 
@@ -48,7 +48,7 @@ node websocket-server
 
 Receives audio from a peer PSTN leg associated to a WebSocket (set up by the Voice API application named pstn-websocket-app.js).<br>
 
-Transcript results from the Deepgram ASR are displayed.
+Transcript results from the Deepgram ASR are displayed (if enabled).
 
 Your actual middleware application may also send audio in the other direction to one or more PSTN legs via the established WebSocket.<br><br>
 
