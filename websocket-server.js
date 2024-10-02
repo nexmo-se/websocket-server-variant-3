@@ -88,8 +88,6 @@ app.ws('/socket', (ws, req) => {
 
   //   deepgram.addListener(LiveTranscriptionEvents.Metadata, (data) => {
   //     console.log("deepgram: metadata received");
-  //     console.log("ws: metadata sent to client");
-  //     // ws.send(JSON.stringify({ metadata: data }));
   //     console.log(JSON.stringify({ metadata: data }));
   //   });
   
